@@ -17,11 +17,51 @@ body {
 }
 
 .carousel-image {
-	height: 100%;
-	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.carousel-item.active {
+	display: inline-table;
+	justify-content: center;
 }
 
 .progress {
 	height: 20px;
 	font-size: 16px;
+}
+
+.carousel-image-container {
+	width: 250px;
+	height: 265px;
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+	/* background-color: black; */
+}
+
+.image {
+	height: 18rem;
+	width: auto;
+}
+
+.image-container {
+	background-color:gray;
+	text-align: center;
+}
+
+.btn-outline-secondary {
+	color: white;
+	border-color: white;
+}
+
+.btn-outline-secondary:hover {
+	color: black;
+	background-color: white;
+}
+
+.typer {
+	color: white;
 }

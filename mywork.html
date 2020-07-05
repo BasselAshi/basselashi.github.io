@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Bassel Ashi: My Work</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" href="css/style.css" media="screen">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand mr-0" href="#">Bassel Ashi</a>
+			<a class="cursor navbar-brand" data-owner="main"></a>
+			<span class="mr-3">--></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+				aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item active mr-3">
+						<a class="nav-link" href="#">My Work <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="mailto:p.ashi@mail.utoronto.ca">Contact</a>
+					</li>
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="resume.pdf">Résumé</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-md my-3">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card mb-3">
+						<h5 class="card-header">Let's Find Space</h5>
+						<div class="image-container">
+							<img src="images/letsfindspace1.jpg" class="image" data-toggle="tooltip" rel="tooltip"
+								data-placement="left" title=""
+								data-original-title="This was taken during Hack the Valley 4, a hackathon hosted at U of T Scarborough every February">
+						</div>
+						<div class="card-body">
+							<p>A solution for optimizing the best meeting spot among people</p>
+							<a href="letsfindspace.html" class="btn btn-outline-secondary float-right">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card mb-3">
+						<h5 class="card-header">UTSC Repository</h5>
+						<div class="image-container">
+							<img src="images/utscrep1.jpg" class="image" data-toggle="tooltip" rel="tooltip"
+								data-placement="right" title=""
+								data-original-title="Fun fact: I even learned Adobe Illustrator to make that logo. The colours represent the original UTSC logo colours. The arrows represent uploading and downloading files, hence the contribution">
+						</div>
+						<div class="card-body">
+							<p>An online contribution-based library for UTSC students</p>
+							<a href="utscrep.html" class="btn btn-outline-secondary float-right">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card mb-3">
+						<h5 class="card-header">vGRAS</h5>
+						<div class="image-container">
+							<img src="images/vgras1.jpg" class="image" data-toggle="tooltip" rel="tooltip"
+								data-placement="right" title=""
+								data-original-title="Fun fact: I even learned Adobe Illustrator to make that logo. The colours represent the original UTSC logo colours. The arrows represent uploading and downloading files, hence the contribution">
+						</div>
+						<div class="card-body">
+							<p>A visual representation of live charts for employees' progress</p>
+							<a href="vgras.html" class="btn btn-outline-secondary float-right">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/popper.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script async src="js/typer.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+	</body>
+
+</html>
