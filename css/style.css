@@ -3,9 +3,17 @@ body {
 	font-family: 'Consolas', serif;
 }
 
+::selection {
+	background: #3498db78;
+  }
+  ::-moz-selection {
+	background: #3498db78;
+  }
+
 .profile-picture {
 	border-radius: 300rem;
-	height: 180px
+	height: 180px;
+	box-shadow: 0px 0px 10px #fff;
 }
 
 .text-primary {
