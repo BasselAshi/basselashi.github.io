@@ -8,6 +8,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
 		<link rel="stylesheet" href="css/style.css" media="screen">
+		<link rel="stylesheet" href="css/flickity.css">
+		<link rel="stylesheet" href="css/fullscreen.css">
 	</head>
 
 	<body>
@@ -69,9 +71,7 @@
 								<div class="col">
 									<h5 class="text-primary">Brief Summary</h3>
 										<p class="card-text">I am a third year Co-Op Computer Science student
-											specializing
-											in
-											Software Engineering at the University of
+											specializing in Software Engineering at the University of
 											Toronto Scarborough. I've had a passion for coding and development since
 											young age. Through watching Youtube videos, I was able to learn lots of
 											programming languages, frameworks, and tools.
@@ -108,35 +108,13 @@
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-12 text-center mb-3">
-									<div id="carouselAwards" class="carousel slide carousel-image" data-ride="carousel">
-										<ol class="carousel-indicators">
-											<li data-target="#carouselAwards" data-slide-to="0" class="active"></li>
-											<li data-target="#carouselAwards" data-slide-to="1"></li>
-										</ol>
-										<div class="carousel-inner">
-											<div class="carousel-item active">
-												<div class="carousel-image-container"><img
-														class="d-block carousel-image" src="images/deanslist.jpg"
-														alt="First slide">
-												</div>
-											</div>
-											<div class="carousel-item">
-												<div class="carousel-image-container">
-													<img class="d-block carousel-image" src="images/nelsonaward.jpg"
-														alt="Second slide">
-												</div>
-											</div>
+									<div class="carousel">
+										<div class="carousel-cell">
+											<img src="images/deanslist.jpg" />
 										</div>
-										<a class="carousel-control-prev" href="#carouselAwards" role="button"
-											data-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
-										</a>
-										<a class="carousel-control-next" href="#carouselAwards" role="button"
-											data-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
-										</a>
+										<div class="carousel-cell">
+											<img src="images/nelsonaward.jpg" />
+										</div>
 									</div>
 								</div>
 							</div>
@@ -225,11 +203,11 @@
 									<span class="badge badge-light">Unity</span>
 									<span class="badge badge-dark">MVC</span>
 									<span class="badge badge-primary">Stored Procedures</span>
-									<span class="badge badge-secondary">Eclipse</span>
-									<span class="badge badge-success">VS Code</span>
-									<span class="badge badge-danger">Basic Networking</span>
-									<span class="badge badge-warning">DNS</span>
-									<span class="badge badge-info">RDP</span>
+									<span class="badge badge-secondary">Scrums</span>
+									<span class="badge badge-success">Communication</span>
+									<span class="badge badge-danger">Problem Solving</span>
+									<span class="badge badge-warning">Public Speaking</span>
+									<span class="badge badge-info">hi</span>
 									<span class="badge badge-light">Unity</span>
 									<span class="badge badge-dark">MVC</span>
 								</div>
@@ -245,10 +223,17 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script async src="js/typer.js"></script>
 		<script src="https://kit.fontawesome.com/5ad54d9a23.js" crossorigin="anonymous"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/fullscreen.js"></script>
 
 		<script>
 			$(document).ready(function () {
 				$('[data-toggle="tooltip"]').tooltip();
+
+				$('.carousel').flickity({
+					fullscreen: true,
+					autoPlay: true
+				});
 			});
 		</script>
 	</body>

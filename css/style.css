@@ -31,23 +31,9 @@ body {
 	margin: 0 auto;
 }
 
-.carousel-item.active {
-	display: inline-table;
-	justify-content: center;
-}
-
 .progress {
 	height: 20px;
 	font-size: 16px;
-}
-
-.carousel-image-container {
-	width: 250px;
-	height: 265px;
-	vertical-align: middle;
-	text-align: center;
-	display: table-cell;
-	/* background-color: black; */
 }
 
 .image {
@@ -82,3 +68,32 @@ body {
 .social-media {
 	font-size: 18px;
 }
+
+.work-logo {
+	width: 200px;
+}
+
+.work-image {
+	height: 300px;
+	width:auto;
+}
+
+.carousel-cell {
+	width: 100%; /* full width */
+	height: 200px;
+	background: #222;
+	/* center images in cells with flexbox */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .carousel.is-fullscreen .carousel-cell {
+	height: 100%;
+  }
+  
+  .carousel-cell img {
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+  }

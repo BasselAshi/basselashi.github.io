@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Bassel Ashi: UTSC Repository</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" href="css/style.css" media="screen">
+		<link rel="stylesheet" href="css/flickity.css">
+		<link rel="stylesheet" href="css/fullscreen.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="navbar-bassel">
+				<a class="navbar-brand mr-0" href="#">Bassel Ashi</a>
+				<a class="cursor navbar-brand" data-owner="main"></a>
+			</div>
+			<span class="mr-3 d-lg-block d-none">--></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+				aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item active mr-3">
+						<a class="nav-link" href="mywork.html">My Work <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="mailto:p.ashi@mail.utoronto.ca">Contact</a>
+					</li>
+					<li class="nav-item mr-3">
+						<a class="nav-link" href="resume.pdf">Résumé</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav float-lg-right">
+					<li class="nav-item mr-3">
+						<a target="_blank" class="nav-link" href="https://github.com/BasselAshi/"><i
+								class="social-media fab fa-github"></i></a>
+					</li>
+					<li class="nav-item mr-3">
+						<a target="_blank" class="nav-link" href="https://www.linkedin.com/in/basselashi/"><i
+								class="social-media fab fa-linkedin-in"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-md my-3">
+			<div class="jumbotron">
+				<div class="text-center">
+					<img class="work-logo" src="https://utscrep.ca/images/logo.png" data-toggle="tooltip" rel="tooltip"
+						data-placement="right" title=""
+						data-original-title="Fun fact: I even learned Adobe Illustrator to make that logo. The colours represent the original UTSC logo colours. The arrows represent uploading and downloading files, hence the contribution">
+				</div>
+				<hr class="my-4">
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="carousel">
+									<div class="carousel-cell">
+										<img src="images/utscrep1.jpg" />
+									</div>
+									<div class="carousel-cell">
+										<img src="images/utscrep2.jpg" />
+									</div>
+									<div class="carousel-cell">
+										<img src="images/utscrep3.jpg" />
+									</div>
+									<div class="carousel-cell">
+										<img src="images/utscrep4.jpg" />
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12 mt-lg-0 mt-3">
+								<h5 class="text-primary">Source</h5>
+								<p>Also known as UTSCRep, UTSC Repository is an online contributive library that allows
+									students
+									to
+									share course material at the University of Toronto Scarborough. From my experience
+									at U of T
+									Scarborough, it is
+									really hard
+									for students, especially first years, to know about a course before taking it, or to
+									get
+									enough
+									resources for the course to perform better. Therefore, I came up with the idea of
+									this
+									website.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<h5 class="text-primary">Technical</h5>
+								<p>It
+									took me 6 weeks to implement. This website operates on ASP.NET Web Forms with MSSQL.
+									To give
+									an
+									insight on the effort that was put into this website, it uses hash with salt to
+									secure
+									users'
+									sensitive data. Files are stored securely on the web server, preventing users from
+									accessing
+									files
+									just with a link. Stored procedures and views are heavily used through the whole
+									website's
+									interaction with the database, allowing maximum security to prevent SQL injections
+									and
+									increasing
+									performance. As small as the website seems to the normal user, it is way larger in
+									size in
+									terms of
+									user ranks. It has an administration panel that gives the
+									Administrator enough power to prevent direct interaction through editing the
+									database.
+									Currently,
+									the website has around 1.2gb of stored data with around 100
+									users. I consider this website as a complete success. Unfortunately, further
+									development is
+									paused
+									for now due to time constraint.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="https://utscrep.ca" target="_blank" class="btn btn-primary float-right" href="#"
+					role="button">Visit
+					Website</a>
+			</div>
+		</div>
+
+		<script src="js/popper.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://kit.fontawesome.com/5ad54d9a23.js" crossorigin="anonymous"></script>
+		<script async src="js/typer.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/fullscreen.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+
+				$('.carousel').flickity({
+					fullscreen: true,
+					autoPlay: true
+				});
+			});
+		</script>
+	</body>
+
+</html>
