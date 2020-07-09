@@ -1,11 +1,11 @@
-var Typer = function(element) {
+var Typer = function (element) {
   this.element = element;
   var delim = element.dataset.delim || ",";
   var words = element.dataset.words || "override these,sample typing";
   this.words = words.split(delim).filter((v) => v); // non empty words
   this.delay = element.dataset.delay || 200;
   this.loop = element.dataset.loop || "true";
-  if (this.loop === "false" ) { this.loop = 1 }
+  if (this.loop === "false") { this.loop = 1 }
   this.deleteDelay = element.dataset.deletedelay || element.dataset.deleteDelay || 800;
 
   this.progress = { word: 0, char: 0, building: true, looped: 0 };
@@ -19,16 +19,16 @@ var Typer = function(element) {
   this.doTyping();
 };
 
-Typer.prototype.start = function() {
+Typer.prototype.start = function () {
   if (!this.typing) {
     this.typing = true;
     this.doTyping();
   }
 };
-Typer.prototype.stop = function() {
+Typer.prototype.stop = function () {
   this.typing = false;
 };
-Typer.prototype.doTyping = function() {
+Typer.prototype.doTyping = function () {
   var e = this.element;
   var p = this.progress;
   var w = p.word;
@@ -66,7 +66,7 @@ Typer.prototype.doTyping = function() {
     p.looped += 1;
   }
 
-  if (!p.building && this.loop <= p.looped){
+  if (!p.building && this.loop <= p.looped) {
     this.typing = false;
   }
 
@@ -75,7 +75,7 @@ Typer.prototype.doTyping = function() {
   }, atWordEnd ? this.deleteDelay : this.delay);
 };
 
-var Cursor = function(element) {
+var Cursor = function (element) {
   this.element = element;
   this.cursorDisplay = element.dataset.cursordisplay || element.dataset.cursorDisplay || "_";
   element.innerHTML = this.cursorDisplay;
@@ -83,7 +83,7 @@ var Cursor = function(element) {
   element.style.transition = "all 0.1s";
   this.interval = setInterval(() => this.updateBlinkState(), 400);
 }
-Cursor.prototype.updateBlinkState = function() {
+Cursor.prototype.updateBlinkState = function () {
   if (this.on) {
     this.element.style.opacity = "0";
     this.on = false;
@@ -109,7 +109,8 @@ function TyperSetup() {
   for (let e of document.getElementsByClassName("cursor")) {
     let t = new Cursor(e);
     t.owner = typers[e.dataset.owner];
-    t.owner.cursor = t;
+    if (t.owner != null)
+      t.owner.cursor = t;
   }
 }
 
