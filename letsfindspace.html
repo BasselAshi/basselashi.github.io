@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Bassel Ashi: UTSC Repository</title>
+		<title>Bassel Ashi: Let's Find Space</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -57,80 +57,60 @@
 				<div class="text-center">
 					<img class="work-logo" data-html="true" src="images/letsfindspace-logo.png" data-toggle="tooltip"
 						rel="tooltip" data-placement="right" title=""
-						data-original-title="<u>Fun fact:</u> I even learned Adobe Illustrator to make that logo. The colours represent the original UTSC logo colours. The arrows represent uploading and downloading files, hence the contribution">
+						data-original-title="<u>Fun fact:</u> The nodes in the logo icon represent people and the edges represent their connection to each other. The opacity applied to the word 'SPACE' and the underline represent the user's need to find the best meeting spot">
 				</div>
 				<hr class="my-4">
 				<div class="row">
-					<div class="col">
-						<div class="row">
-							<div class="col-lg-6 col-md-12">
-								<div class="carousel">
-									<div class="carousel-cell">
-										<img src="images/letsfindspace2.jpg" />
-									</div>
-									<div class="carousel-cell">
-										<img src="images/letsfindspace1.jpg" />
-									</div>
-									<div class="carousel-cell">
-										<img src="images/letsfindspace3.jpg" />
-									</div>
-								</div>
+					<div class="col-lg-5 col-md-12">
+						<h5 class="text-primary">Motive</h5>
+						<p>My enthusiasm in problem solving makes me enjoy participating in coding competitions and
+							hackathons. Aside from the better awards, I have been more interested in the latter because
+							it is up to me and my team to choose our level of competitiveness. In February 2020, I was
+							able to attend <a href="https://hackthevalley.io/">Hack the Valley</a> at the University of
+							Toronto Scarborough. I formed a team of four people who shared the same motive as I did. A
+							few minutes through brainstorming, we came up with the idea of Let's Find Space.
+					</div>
+					<div class="col-lg-7 col-md-12">
+						<div class="carousel">
+							<div class="carousel-cell htv-image-cell">
+								<img src="images/letsfindspace2.jpg" />
 							</div>
-							<div class="col-lg-6 col-md-12 mt-lg-0 mt-3">
-								<h5 class="text-primary">Source</h5>
-								<p>Also known as UTSCRep, UTSC Repository is an online contributive library that allows
-									students
-									to
-									share course material at the University of Toronto Scarborough. From my experience,
-									it is
-									difficult
-									for students, especially first years, to know about a course before taking it, or to
-									get
-									enough
-									resources for the course to perform better. Therefore, I came up with the idea of
-									this
-									website.</p>
+							<div class="carousel-cell htv-image-cell">
+								<img src="images/letsfindspace1.jpg" />
 							</div>
-						</div>
-						<div class="row mt-3">
-							<div class="col">
-								<h5 class="text-primary">Technical</h5>
-								<p>The project took me 6 weeks to implement. It operates on ASP.NET Web Forms
-									with MSSQL.
-									To give
-									an
-									insight on the effort that was put into making UTSCRep possible, it uses hash with
-									salt to
-									secure
-									users'
-									sensitive data. Files are stored securely on the web server, preventing users from
-									accessing
-									files
-									just with a link. Stored procedures and views are heavily used through the whole
-									website's
-									interaction with the database, allowing maximum security to prevent SQL injections
-									and
-									increasing
-									performance. As small as the website seems to the normal user, it is way in
-									size in
-									terms of
-									user ranks and their permissions. For example, a contributor earns more permissions
-									to have less constraints when uploading material. Administrators have access to a
-									customized administration panel, preventing the need of any direct interaction
-									through editing the database. Currently, the website stores 1.2gb of data, with
-									around 100 users. I consider this website as a complete success. Unfortunately,
-									further
-									development is
-									paused
-									for now due to time constraint.
-								</p>
+							<div class="carousel-cell htv-image-cell">
+								<img src="images/letsfindspace3.jpg" />
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="row mt-3">
+					<div class="col">
+						<h5 class="text-primary">Idea</h5>
+						<p>
+							We presented a problem in which multiple people want to group up somewhere, the question is
+							how to find the most suitable place for all of them to meet up without making the commute
+							unfair for any of them. Using Google's APIs, we can allow the user to enter their location
+							and map it on a graph in which (x, y) are represented by latitude and longitude. With some
+							basic Math, we can find an average point. Finally, we search for the closest suitable
+							coffeeshop, park, or library to this point and then we display to the user on a map.
+						</p>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col">
-						<a href="https://utscrep.ca" target="_blank" class="btn btn-primary float-right"
+						<h5 class="text-primary">Outcome</h5>
+						<p>
+							Even though we did not win any prizes, we achieved our goal. Through 48 hours of hard work
+							in problem solving and using technology that is new to us such as NodeJS, React, Git, and
+							Google APIs, we were still able to finish the complete project and present it to the judges.
+							This experience also made me confident with my quick learning skills, to be able to adapt
+							and apply what I have learned in no time.
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col">
+						<a href="http://letsfind.space/" target="_blank" class="btn btn-primary float-right"
 							role="button">Visit
 							Website</a>
 					</div>

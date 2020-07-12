@@ -53,8 +53,9 @@
 		<div class="container-md my-3">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="card mb-3">
-						<h5 class="card-header">Let's Find Space</h5>
+					<div class="card mb-3 glow-hover" onclick="redirectWork(this)" onmouseover="triggerWorkHover(this)"
+						onmouseout="triggerWorkHover(this)">
+						<div class=" card-header">Let's Find Space</div>
 						<div class="image-container">
 							<img src="images/letsfindspace1.jpg" class="image" data-toggle="tooltip" rel="tooltip"
 								data-placement="left" title=""
@@ -67,8 +68,9 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="card mb-3">
-						<h5 class="card-header">UTSC Repository</h5>
+					<div class="card mb-3 glow-hover" onclick="redirectWork(this)" onmouseover="triggerWorkHover(this)"
+						onmouseout="triggerWorkHover(this)">
+						<div class=" card-header">UTSC Repository</div>
 						<div class="image-container">
 							<img src="images/utscrep1.jpg" data-html="true" class="image" data-toggle="tooltip"
 								rel="tooltip" data-placement="right" title=""
@@ -81,8 +83,9 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="card mb-3">
-						<h5 class="card-header">vGRAS</h5>
+					<div class="card mb-3 glow-hover" onclick="redirectWork(this)" onmouseover="triggerWorkHover(this)"
+						onmouseout="triggerWorkHover(this)">
+						<div class=" card-header">vGRAS</div>
 						<div class="image-container">
 							<img src="images/vgras1.jpg" class="image" data-html="true" data-toggle="tooltip"
 								rel="tooltip" data-placement="left" title=""
@@ -107,6 +110,17 @@
 			$(document).ready(function () {
 				$('[data-toggle="tooltip"]').tooltip();
 			});
+
+			function redirectWork(el) {
+				let $a = $(el).find("a");
+				let redirectLink = $a.attr("href");
+				window.location.href = redirectLink;
+			}
+
+			function triggerWorkHover(el) {
+				let $a = $(el).find("a");
+				$a.toggleClass("btn-outline-secondary-hover");
+			}
 		</script>
 	</body>
 

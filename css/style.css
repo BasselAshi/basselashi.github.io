@@ -60,6 +60,11 @@ body {
 	background-color: white;
 }
 
+.btn-outline-secondary-hover {
+	color: black;
+	background-color: white;
+}
+
 .navbar-bassel {
 	display: inline-flex;
 	width: 150px;
@@ -109,4 +114,15 @@ body {
 
   .card {
 	box-shadow: 0px 0px 2px #fff;
+	transition: box-shadow 0.3s;
+  }
+
+  .glow-hover:hover {
+	box-shadow: 0px 0px 10px #fff;
+	transition: box-shadow 0.3s;
+	cursor: pointer;
+  }
+
+  .htv-image-cell {
+	  height: 300px;
   }
