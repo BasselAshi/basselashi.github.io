@@ -126,3 +126,18 @@ body {
   .htv-image-cell {
 	  height: 300px;
   }
+
+  .smartlobby-image-cell {
+	height: 260px;
+}
+
+  .smartlobby-text {
+    font-size: 32px;
+    color: #7bc240;
+    font-family: SANS-SERIF;
+    font-weight: bolder;
+}
+
+li {
+	margin-bottom: 10px;
+}
