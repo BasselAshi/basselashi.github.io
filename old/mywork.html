@@ -1,106 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bassel Ashi ~ My Work</title>
+<head>
+	<meta charset="utf-8">
+	<title>Bassel Ashi: My Work</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172973259-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+		gtag('config', 'UA-172973259-1');
+	</script>
+</head>
 
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="navbar-bassel">
+			<a class="navbar-brand mr-0" href="#">Bassel Ashi</a>
+			<a class="cursor navbar-brand" data-owner="main"></a>
+		</div>
+		<span class="mr-3 d-lg-block d-none">--></span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+			aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+		<div class="collapse navbar-collapse" id="navbarColor02">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item active mr-3">
+					<a class="nav-link" href="#">My Work <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="mailto:p.ashi@mail.utoronto.ca">Contact</a>
+				</li>
+				<li class="nav-item mr-3">
+					<a class="nav-link" href="resume.pdf">Résumé</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav float-lg-right">
+				<li class="nav-item mr-3">
+					<a target="_blank" class="nav-link" href="https://github.com/BasselAshi/"><i
+							class="social-media fab fa-github"></i></a>
+				</li>
+				<li class="nav-item mr-3">
+					<a target="_blank" class="nav-link" href="https://www.linkedin.com/in/basselashi/"><i
+							class="social-media fab fa-linkedin-in"></i></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-  </head>
+	<div class="container-md my-3">
+		<div class="row">
+			<!-- <div class="col-md-6">
+				<div class="card mb-3 glow-hover" onclick="redirectWork(this)" onmouseover="triggerWorkHover(this)"
+					onmouseout="triggerWorkHover(this)">
+					<div class=" card-header">FGF SmartLobby</div>
+					<div class="image-container">
+						<img src="images/smartlobby1.png" class="image" data-toggle="tooltip" rel="tooltip"
+							data-placement="left" title=""
+							data-original-title="SmartLobby was completely individually developed during a span of 3 months during my co-op work term. The feedback from management and coworkers was fantastic!">
+					</div>
+					<div class="card-body">
+						<p>A visitor management solution with badge printing
+						</p>
+						<a href="smartlobby.html" class="btn btn-outline-secondary float-right">Read More</a>
+					</div>
+				</div>
+			</div> -->
+			<div class="col-md-6">
+				<div class="card mb-3 glow-hover" onclick="redirectWork(this)" onmouseover="triggerWorkHover(this)"
+					onmouseout="triggerWorkHover(this)">
+					<div class=" card-header">Let's Find Space</div>
+					<div class="image-container">
+						<img src="images/letsfindspace1.jpg" class="image" data-toggle="tooltip" rel="tooltip"
+							data-placement="right" title=""
+							data-original-title="This was taken during Hack the Valley 4, a hackathon hosted at U of T Scarborough every February">
+					</div>
+					<div class="card-body">
+						<p>A solution for optimizing the best meeting spot among people</p>
+						<a href="letsfindspace.html" class="btn btn-outline-secondary float-right">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mb-3 glow-hover" onclick="redirectWork(this)" onmouseover="triggerWorkHover(this)"
+					onmouseout="triggerWorkHover(this)">
+					<div class=" card-header">UTSC Repository</div>
+					<div class="image-container">
+						<img src="images/utscrep1.jpg" data-html="true" class="image" data-toggle="tooltip"
+							rel="tooltip" data-placement="left" title=""
+							data-original-title="<u>Fun fact:</u> All wallpapers and images on the website are taken on campus!">
+					</div>
+					<div class="card-body">
+						<p>An online contribution-based library for UTSC students</p>
+						<a href="utscrep.html" class="btn btn-outline-secondary float-right">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card mb-3 glow-hover" onclick="redirectWork(this)" onmouseover="triggerWorkHover(this)"
+					onmouseout="triggerWorkHover(this)">
+					<div class=" card-header">vGRAS</div>
+					<div class="image-container">
+						<img src="images/vgras1.jpg" class="image" data-html="true" data-toggle="tooltip" rel="tooltip"
+							data-placement="right" title=""
+							data-original-title="At the end of my internship where I built this project, I received a Samsung Gear S2 smartwatch as a gift!">
+					</div>
+					<div class="card-body">
+						<p>A visual representation of live charts to track progress</p>
+						<a href="vgras.html" class="btn btn-outline-secondary float-right">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <body>
+	<script src="js/popper.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script async src="js/typer.js"></script>
+	<script src="https://kit.fontawesome.com/5ad54d9a23.js" crossorigin="anonymous"></script>
 
-    <div class="navbar-dark text-white">
-      <div class="container">
-        <nav class="navbar px-0 navbar-expand-lg navbar-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a href="index.html" class="p-3 text-decoration-none text-light">Home</a>
-              <a href="mywork.html" class="pl-md-0 p-3 text-light">My Work</a>
-              <a href="mailto: p.ashi@mail.utoronto.ca" class="p-3 text-decoration-none text-light">Contact</a>
-              <a href="https://github.com/basselashi" target="_blank"
-                class="p-3 text-decoration-none text-light">Github</a>
-              <a href="https://www.linkedin.com/in/basselashi/" target="_blank"
-                class="p-3 text-decoration-none text-light">LinkedIn</a>
-            </div>
-          </div>
-        </nav>
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
 
-      </div>
-    </div>
+		function redirectWork(el) {
+			let $a = $(el).find("a");
+			let redirectLink = $a.attr("href");
+			window.location.href = redirectLink;
+		}
 
-
-
-
-    <div class="jumbotron bg-transparent mb-0 radius-0">
-      <div class="container">
-        <div class="row">
-          <h1 class="mb-5">My Work</h1>
-        </div>
-        <div class="row">
-          <div class="col-xl-6" style="margin-top: 10px;">
-            <div class="ht-tm-element card">
-              <img class="card-img-top" src="images/letsfindspace1.jpg" alt="Let's Find Space">
-              <div class="card-body">
-                <h4 class="card-title">Let's Find Space</h4>
-                <p class="card-text">A solution for optimizing the best meeting spot among people</p>
-                <a href="letsfindspace" class="btn btn-primary btn-sm">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6" style="margin-top: 10px;">
-            <div class="ht-tm-element card">
-              <img class="card-img-top" src="images/utscrep1.jpg" alt="UTSCRep">
-              <div class="card-body">
-                <h4 class="card-title">UTSC Repository</h4>
-                <p class="card-text">An online contribution-based library for UTSC students.</p>
-                <a href="utscrep" class="btn btn-primary btn-sm">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6" style="margin-top: 10px;">
-            <div class="ht-tm-element card">
-              <img class="card-img-top" src="images/vgras1.jpg" alt="UTSCRep">
-              <div class="card-body">
-                <h4 class="card-title">vGRAS</h4>
-                <p class="card-text">A visual representation of live charts for employees' progress</p>
-                <a href="vgras" class="btn btn-primary btn-sm">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-  </body>
+		function triggerWorkHover(el) {
+			let $a = $(el).find("a");
+			$a.toggleClass("btn-outline-secondary-hover");
+		}
+	</script>
+</body>
 
 </html>
