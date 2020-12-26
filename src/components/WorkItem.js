@@ -34,8 +34,8 @@ class WorkItem extends React.Component {
 
 	render() {
 		return (
-			<div className="col-md-6" onClick={this.handleClick} onTouchEndCapture={this.handleClick}>
-				<div className="card mb-3 glow-hover" onTouchStartCapture={this.triggerCardGlow} onMouseOver={this.triggerCardGlow} onMouseOut={this.triggerCardGlow}>
+			<div className="col-md-6" onMouseDown={this.handleClick}>
+				<div className="card mb-3 glow-hover" onTouchStart={this.triggerCardGlow} onTouchEnd={this.triggerCardGlow} onMouseOver={this.triggerCardGlow} onMouseOut={this.triggerCardGlow}>
 					<div className=" card-header">{this.props.title}</div>
 					<div className="image-container">
 						<img src={"../../" + this.props.imageSource} className="image" data-toggle="tooltip" rel="tooltip" data-placement={this.props.tooltipPlacement} data-html="true" title="" data-original-title={this.props.tooltipTitle} />
