@@ -11,15 +11,7 @@ class Recommendations extends React.Component {
             <div className="container-md my-3">
                 <div className="card">
                     <div className="card-header">
-                        A Glimpse of my Skills
-                    </div>
-                    <div className="card-body">
-                        <p className="mb-0">To make this page more interesting, I am working on getting permissions from LinkedIn to integrate ASP.NET WebAPI with their OAuth API, to automatically display recommendations from LinkedIn. Unfortunately for now, my recommendations are hard-coded below.</p>
-                    </div>
-                </div>
-                <div className="card mt-3">
-                    <div className="card-header">
-                        Recommendations
+                        LinkedIn Recommendations
                     </div>
                     <div className="card-body pt-0">
                         <div className="row">

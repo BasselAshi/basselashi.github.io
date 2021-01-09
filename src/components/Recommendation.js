@@ -3,7 +3,7 @@ import React from 'react'
 class Badge extends React.Component {
 	render() {
 		return (
-			<div className="col-md-6">
+			<div className="col-lg-6">
 				<div className="row">
 					<div className="col">
 						<hr className={"bg-" + this.props.colour} />
