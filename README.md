@@ -3,6 +3,7 @@ My ePortfolio is developed in React with Bootstrap Darkly theme and a bunch of J
 
 ### **Usage**
 The application uses the default npm commands.
+Node modules are not committed, run ```npm install``` to install them
 To run the application, use ```npm start watch```
 To build, use ```npm start build```
 
