@@ -42,7 +42,7 @@ class WorkItem extends React.Component {
 					</div>
 					<div className="card-body">
 						<p>{this.props.description}</p>
-						<Link to='/mywork/smartlobby/' className={"btn btn-outline-secondary float-right " + this.state.glow}>Read More</Link>
+						<Link to={`/mywork/${this.props.link}/`} className={"btn btn-outline-secondary float-right " + this.state.glow}>Read More</Link>
 					</div>
 				</div>
 			</div>
