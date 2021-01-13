@@ -7,7 +7,22 @@ class WorkItem extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			glow: ''
+			glow: '',
+			readMore: {
+				enabled: true,
+				text: "Read More",
+				italicClass: "",
+				disabledClass: ""
+			},
+			visitWebsite: false
+		}
+
+		if (this.props.underconstruction) {
+			this.state.readMore.enabled = false;
+			this.state.readMore.text = "Under Construction";
+			this.state.readMore.italicClass = "font-italic";
+			this.state.readMore.disabledClass = "disabled";
+			this.state.visitWebsite = true
 		}
 	}
 
@@ -17,6 +32,10 @@ class WorkItem extends React.Component {
 	}
 
 	triggerCardGlow = () => {
+		if (!this.state.readMoreEnabled) {
+			return;
+		}
+
 		if (this.state.glow == 'btn-outline-secondary-hover') {
 			this.setState({
 				glow: ''
@@ -29,6 +48,10 @@ class WorkItem extends React.Component {
 	}
 
 	handleClick = () => {
+		if (!this.state.readMoreEnabled) {
+			return;
+		}
+
 		this.props.history.push(`/mywork/${this.props.link}/`);
 	}
 
@@ -42,7 +65,10 @@ class WorkItem extends React.Component {
 					</div>
 					<div className="card-body">
 						<p>{this.props.description}</p>
-						<Link to={`/mywork/${this.props.link}/`} className={"btn btn-outline-secondary float-right " + this.state.glow}>Read More</Link>
+						<Link to={`/mywork/${this.props.link}/`} className={`btn btn-outline-secondary float-right ${this.state.glow} ${this.state.readMore.italicClass} ${this.state.readMore.disabledClass}`}>{this.state.readMore.text}</Link>
+						{this.state.visitWebsite &&
+							<a target="_blank" className="btn btn-outline-success float-right mr-2" href={this.props.websiteLink}>Visit Website</a>
+						}
 					</div>
 				</div>
 			</div>
