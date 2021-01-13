@@ -32,7 +32,7 @@ class WorkItem extends React.Component {
 	}
 
 	triggerCardGlow = () => {
-		if (!this.state.readMoreEnabled) {
+		if (!this.state.readMore.enabled) {
 			return;
 		}
 
@@ -48,7 +48,7 @@ class WorkItem extends React.Component {
 	}
 
 	handleClick = () => {
-		if (!this.state.readMoreEnabled) {
+		if (!this.state.readMore.enabled) {
 			return;
 		}
 
