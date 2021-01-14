@@ -137,7 +137,6 @@ body {
   .glow-hover:hover {
 	box-shadow: 0px 0px 10px #fff !important;
 	transition: box-shadow 0.3s !important;
-	cursor: pointer !important;
   }
 
   .htv-logo {

@@ -3,6 +3,9 @@ import { Link, withRouter } from 'react-router-dom'
 import $ from 'jquery'
 import tooltip from 'bootstrap'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 class WorkItem extends React.Component {
 	constructor(props) {
 		super(props);
@@ -19,10 +22,14 @@ class WorkItem extends React.Component {
 
 		if (this.props.underconstruction) {
 			this.state.readMore.enabled = false;
-			this.state.readMore.text = "Under Construction";
+			this.state.readMore.text = "Blog in progress...";
 			this.state.readMore.italicClass = "font-italic";
 			this.state.readMore.disabledClass = "disabled";
 			this.state.visitWebsite = true
+		}
+
+		if (this.props.githubLink != null) {
+			this.state.visitGithub = true;
 		}
 	}
 
@@ -35,31 +42,19 @@ class WorkItem extends React.Component {
 		if (!this.state.readMore.enabled) {
 			return;
 		}
-
-		if (this.state.glow == 'btn-outline-secondary-hover') {
-			this.setState({
-				glow: ''
-			});
-		} else {
-			this.setState({
-				glow: 'btn-outline-secondary-hover'
-			});
-		}
-	}
-
-	handleClick = () => {
-		if (!this.state.readMore.enabled) {
-			return;
-		}
-
-		this.props.history.push(`/mywork/${this.props.link}/`);
 	}
 
 	render() {
 		return (
-			<div className="col-md-6" onMouseDown={this.handleClick}>
+			<div className="col-md-6">
 				<div className="card mb-3 glow-hover" onTouchStart={this.triggerCardGlow} onTouchEnd={this.triggerCardGlow} onMouseOver={this.triggerCardGlow} onMouseOut={this.triggerCardGlow}>
-					<div className=" card-header">{this.props.title}</div>
+					<div className=" card-header">{this.props.title}
+						{this.state.visitGithub &&
+							<a target="_blank" className="float-right text-danger" href={this.props.githubLink}>
+								<FontAwesomeIcon className="mr-1" icon={faGithub} />Github
+							</a>
+						}
+					</div>
 					<div className="image-container">
 						<img src={"../../" + this.props.imageSource} className="image" data-toggle="tooltip" rel="tooltip" data-placement={this.props.tooltipPlacement} data-html="true" title="" data-original-title={this.props.tooltipTitle} />
 					</div>
